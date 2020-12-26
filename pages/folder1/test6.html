@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>作用域 | 婧婧的首页</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/egg.png">
+    <meta name="description" content="婧婧的前端记录">
+    
+    <link rel="preload" href="/assets/css/0.styles.d32c054f.css" as="style"><link rel="preload" href="/assets/js/app.457c5e77.js" as="script"><link rel="preload" href="/assets/js/2.56829aa0.js" as="script"><link rel="preload" href="/assets/js/26.ee52164e.js" as="script"><link rel="prefetch" href="/assets/js/10.9960f884.js"><link rel="prefetch" href="/assets/js/11.72b2ff05.js"><link rel="prefetch" href="/assets/js/12.3ca7598c.js"><link rel="prefetch" href="/assets/js/13.9d61903d.js"><link rel="prefetch" href="/assets/js/14.b85b0389.js"><link rel="prefetch" href="/assets/js/15.490b8533.js"><link rel="prefetch" href="/assets/js/16.bfb2e342.js"><link rel="prefetch" href="/assets/js/17.cd69f42a.js"><link rel="prefetch" href="/assets/js/18.ad6455eb.js"><link rel="prefetch" href="/assets/js/19.ce21f751.js"><link rel="prefetch" href="/assets/js/20.f292b97e.js"><link rel="prefetch" href="/assets/js/21.28010e96.js"><link rel="prefetch" href="/assets/js/22.97cf0af3.js"><link rel="prefetch" href="/assets/js/23.68052dee.js"><link rel="prefetch" href="/assets/js/24.b70a2770.js"><link rel="prefetch" href="/assets/js/25.3aaabdb6.js"><link rel="prefetch" href="/assets/js/27.6cd5534a.js"><link rel="prefetch" href="/assets/js/28.4a678ee5.js"><link rel="prefetch" href="/assets/js/29.5487dbca.js"><link rel="prefetch" href="/assets/js/3.16edbd61.js"><link rel="prefetch" href="/assets/js/4.229a3a61.js"><link rel="prefetch" href="/assets/js/5.a27ddcbd.js"><link rel="prefetch" href="/assets/js/6.12c1d182.js"><link rel="prefetch" href="/assets/js/7.06af1b1d.js"><link rel="prefetch" href="/assets/js/8.472ac202.js"><link rel="prefetch" href="/assets/js/9.dd4c9217.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d32c054f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/egg.png" alt="婧婧的首页" class="logo"> <span class="site-name can-hide">婧婧的首页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder1/test2.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+  琐碎
+</a></li></ul></div></div><div class="nav-item"><a href="/pages/folder1/test3.html" class="nav-link">
+  功能演示
+</a></div><div class="nav-item"><a href="https://github.com/dwanda" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder1/test2.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+  琐碎
+</a></li></ul></div></div><div class="nav-item"><a href="/pages/folder1/test3.html" class="nav-link">
+  功能演示
+</a></div><div class="nav-item"><a href="https://github.com/dwanda" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Javascript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/folder1/test4.html" class="sidebar-link">javascript-变量类型</a></li><li><a href="/pages/folder1/test5.html" class="sidebar-link">javascript-数组&amp;字符串详谈</a></li><li><a href="/pages/folder1/test6.html" aria-current="page" class="active sidebar-link">javascript-深入系列</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/folder1/test6.html#作用域" class="sidebar-link">作用域</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test6.html#闭包" class="sidebar-link">闭包</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test6.html#内存管理" class="sidebar-link">内存管理</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test6.html#原型范式和原型链" class="sidebar-link">原型范式和原型链</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test6.html#this必知必会" class="sidebar-link">this必知必会</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test6.html#执行上下文与调用栈" class="sidebar-link">执行上下文与调用栈</a></li></ul></li><li><a href="/pages/folder1/test7.html" class="sidebar-link">javascript-手写</a></li><li><a href="/pages/folder1/test8.html" class="sidebar-link">javascript-ES6</a></li><li><a href="/pages/folder1/test9.html" class="sidebar-link">javascript-异步编程</a></li><li><a href="/pages/folder1/test10.html" class="sidebar-link">javascript-DOM编程</a></li><li><a href="/pages/folder1/test11.html" class="sidebar-link">javascript-事件循环</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>WEB网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>REACT</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>小程序</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="作用域"><a href="#作用域" class="header-anchor">#</a> 作用域</h2> <h3 id="_1、概述"><a href="#_1、概述" class="header-anchor">#</a> 1、概述</h3> <p>从每一门编程语言都具有存储当前变量当中的值，并且允许我们对这个值进行访问和修改。那么我们如何才能知道它们放在哪里，如何找到它们？需要一套规则，这个规则就是“作用域”</p> <p><strong>作用域指约束下一个变量，函数，标识符可以被访问的区域</strong></p> <h3 id="_2、理解作用域的实现机制"><a href="#_2、理解作用域的实现机制" class="header-anchor">#</a> 2、理解作用域的实现机制</h3> <p>(结合JS编译原理看)：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">'jingjing'</span>
+</code></pre></div><p>当读到这段代码，JS引擎会把它分成两部分去解析：</p> <p>（1）var name (编译时处理)</p> <p>（2）name = 'jingjing' (运行时处理)</p> <p>① 编译阶段</p> <p>由 <strong>编译器</strong> 完成：编译器会寻找当前的作用域，看看name是否存在，如果存在就会忽略掉var name这个声明，继续编译下去。否则，则会在这个作用域里新增一个name。然后，编译器会为引擎生成运行时所需要的代码，程序进入执行阶段</p> <p>② 运行时处理</p> <p>由 <strong>JS引擎</strong> 完成： JS引擎也会西站当前的作用域，如果找到了name，那么会给它赋值。如果没找到那么它会从当前作用域“探头”，看看“外面”有没有，如果还没有就会继续到“外面的外面”去找，如果实在找不到，就会抛出一个异常。</p> <p>这里引出JS引擎的查找过程，当然上面&quot;探头&quot;和&quot;外面&quot;进一步引出一个JS作用域里一个重要的概念 ---- 作用域链</p> <h3 id="_3、三种作用域"><a href="#_3、三种作用域" class="header-anchor">#</a> 3、三种作用域</h3> <p>在介绍作用域链之前，先了解一下三种作用域</p> <p>javascript中有三种作用域</p> <ul><li>全局作用域</li> <li>函数作用域</li> <li>块作用域</li></ul> <p>举个例子</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//全局作用域内的变量</span>
+  <span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">&quot;jingjing&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">//函数作用域</span>
+  <span class="token keyword">function</span> <span class="token function">showName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token comment">//块作用域</span>
+  <span class="token punctuation">{</span>
+    name <span class="token operator">=</span> <span class="token string">'longlong'</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">showName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//输出‘jingjing’</span>
+</code></pre></div><h3 id="作用域链-作用域的嵌套"><a href="#作用域链-作用域的嵌套" class="header-anchor">#</a> 作用域链（作用域的嵌套）</h3> <p><strong>当一个块或者一个函数嵌套在另一个块或者函数中时，就发生了作用域的嵌套</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">function</span> <span class="token function">addA</span><span class="token punctuation">(</span><span class="token parameter">a</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token operator">+</span>b<span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token comment">//报错，没有声明</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token function">addA</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">//3</span>
+</code></pre></div><p>在这个函数中有两个作用域：addA的函数作用域和全局作用域，关系如下图：</p> <p><img src="https://img-blog.csdnimg.cn/20201103151216902.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70#pic_center" alt="hhh"></p> <p>执行上面的代码，当<code>addA</code>这个函数访问b，c变量的时候，会发现在当前的作用域内没有找到b，c变量，因此它会“探头”到“外面”，也就是全局作用域中查找，可以找到b在全局作用域中，因此可以拿来使用，但是c没有找到，那么它将抛出一个错误。</p> <p>在查找的过程中，层层寻找的作用域，就形成了一条作用域链：</p> <p><img src="https://img-blog.csdnimg.cn/20201103151843453.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p> <p>再分析一个例子：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">function</span> <span class="token function">addABC</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span>b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> a<span class="token operator">+</span>b<span class="token operator">+</span>c<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> add<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">var</span> c <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> globalAdd <span class="token operator">=</span> <span class="token function">addABC</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">globalAdd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 6 </span>
+
+</code></pre></div><p>在这个函数中有三个作用域：addABC的函数作用域，add函数作用域和全局作用域，关系如下图：</p> <p><img src="https://img-blog.csdnimg.cn/20201103152922776.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p> <p>作用域链关系如下图：</p> <p><img src="https://img-blog.csdnimg.cn/20201103153144904.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p> <p>其中add这个函数，当它想要查找a,b,c三个变量时，它要到上层的addABC作用域中查找(因此要明白下面两个概念)</p> <p><strong>1、像a,b,c这样在函数中被使用，但它既不是函数参数，也不是函数的局部变量，而是一个不属于当前作用域的变量，此时相对于它自己的作用域来讲，它就是一个<code>自由变量</code>。</strong></p> <p><strong>2、像add这样引用了自由变量的函数，就叫做<code>闭包</code>。</strong></p> <h3 id="词法作用域和动态作用域"><a href="#词法作用域和动态作用域" class="header-anchor">#</a> 词法作用域和动态作用域</h3> <p>大部分语言编译器的第一个阶段就是<code>词法化</code>：
+<code>词法化</code>的过程就是对代码的字符进行检查</p> <blockquote><p>词法作用域就是定义在词法阶段的作用域，词法作用域由你在写代码时，将<code>变量和块作用域</code>写在那里来决定</p></blockquote> <p>因此词法分析处理器处理代码时会保持作用域不变</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">a</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> b <span class="token operator">=</span> a <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token parameter">c</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">bar</span><span class="token punctuation">(</span>b <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//2,4,12</span>
+</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20201129151352387.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <p>①是包含着整个全局作用域，其中有一个标志符：<code>foo</code></p> <p>②是包含着foo所创建的作用域，其中有三个标识符：<code>a,b,bar</code></p> <p>③是包含bar创建的作用域，其中有一个标识符：<code>c</code></p> <p>查找：从<code>console.log(a,b,c)</code>开始查找，
+<code>bar-&gt;foo-&gt;</code>全局，直到查找到需要的变量。</p> <blockquote><p>无论函数在哪里被调用，也无论如何调用，它的词法作用域都只由函数被声明时所处的位置决定。</p></blockquote> <h3 id="欺骗词法"><a href="#欺骗词法" class="header-anchor">#</a> 欺骗词法</h3> <p>上面讲到词法作用域是在代码申明的时候就已经确定了，那么怎样才能在运行时来“修改”词法作用域?</p> <p>存在两种机制：</p> <ul><li><p>1、eval</p> <p>javascript 中的eval()可以接收一个字符串为参数，并将其中的内容视为好像在书写时就存在在这个位置;</p> <p>举个例子：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">str<span class="token punctuation">,</span>a</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">eval</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//欺骗</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token function">foo</span><span class="token punctuation">(</span><span class="token string">&quot;var b = 3;&quot;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">//1,3</span>
+</code></pre></div></li></ul> <p><code>str</code>在<code>foo</code>函数创建的作用域内是不存在的，一旦使用<code>eval()</code>函数，它会直接调用<code>var b = 3</code>，就相当b在代码申明的时候就已经定义到了<code>foo</code>创建的作用域里;</p> <ul><li>2、with</li></ul> <p><strong>从它如何同被它影响的词法作用域进行交互来解释<code>with</code></strong></p> <p><code>with</code>通常被当做重复引用同一个对象的多个属性的一种快捷模式，例如：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+  b<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span>
+  c<span class="token operator">:</span><span class="token number">3</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//单调的重复‘obj’</span>
+obj<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>c <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+
+<span class="token comment">//使用with</span>
+<span class="token keyword">with</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+  b <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+  c <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可以看到，再调用一个对象的多个属性的时候，我们可以采用with的方式，简化操作。当然这并不是现在要讨论的东西，with如何修改作用域，才是需要了解的：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">with</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> o1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> o2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  b<span class="token operator">:</span><span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span>o1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o1<span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//2</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span>o2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o2<span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//undefined</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//2,---a被泄露到全局作用域上</span>
+</code></pre></div><p>这个例子创建了<code>o1,o2</code>两个对象，其中o1具有a属性。<code>foo()</code>函数接收一个obj参数，该参数是一个对象引用，并对这个对象引用执行了<code>with(obj){}</code>，在<code>with块</code>内部，进行一个对a的赋值操作；</p> <ul><li>with和eval的区别</li></ul> <p>with通过接收一个字符，来修改作用域</p> <p>eval通过一个对象的引用，将对象的属性当作作用域中的标识符来处理</p> <p><strong>===两种方式存在弊端：</strong></p> <p>javascript引擎会在编译阶段进行数项的性能优化，其中有些依赖于能够根据代码词法进行静态解析，并预先确定所有变量和函数的定义位置，才能在执行过程中快速找到标识符，但是如果存在<code>with和eval</code>，那么标识符的判断将是无效的。</p> <h2 id="闭包"><a href="#闭包" class="header-anchor">#</a> 闭包</h2> <h2 id="内存管理"><a href="#内存管理" class="header-anchor">#</a> 内存管理</h2> <h2 id="原型范式和原型链"><a href="#原型范式和原型链" class="header-anchor">#</a> 原型范式和原型链</h2> <h2 id="this必知必会"><a href="#this必知必会" class="header-anchor">#</a> this必知必会</h2> <p><img src="https://img-blog.csdnimg.cn/20201206173939596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <h3 id="一、调用位置"><a href="#一、调用位置" class="header-anchor">#</a> 一、调用位置</h3> <p>理解</p> <p><code>调用位置</code>：函数在代码中被调用的位置（敲重点，这里不是指声明的位置）只有这样才能真正明白：this到底引用的是什么</p> <p><code>调用栈</code>:为了到达当前执行位置所调用的所有函数</p> <blockquote><p>我们关心的<code>调用位置</code>就在当前正在执行的函数的前一个调用中</p></blockquote> <p>如何理解上面这句话呢？首先借助书上的例子：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//当前的调用栈baz</span>
+  <span class="token comment">//当前的调用位置：全局作用域</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'baz'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//bar()的调用位置</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//当前的调用栈 baz-&gt;bar</span>
+  <span class="token comment">//调用位置在baz中</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'bar'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//foo当前的调用位置</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//当前的调用栈 baz-&gt;bar-&gt;foo</span>
+  <span class="token comment">//调用位置在bar中</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'foo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//baz()当前的调用位置</span>
+</code></pre></div><p>在开发者工具中查看调用栈的方法：
+比如说要查看foo()函数的<code>调用栈</code>和<code>调用位置</code> <img src="https://img-blog.csdnimg.cn/20201206161248143.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <p>我们给foo()函数的第一行代码设置断点，在右边会展示函数调用的列表，这就是<code>调用栈</code>:<code>baz-&gt;bar-&gt;foo</code>,栈中的第二个元素就是真正的调用位置，也就是这里的<code>bar()</code></p> <h3 id="二、绑定规则"><a href="#二、绑定规则" class="header-anchor">#</a> 二、绑定规则</h3> <p>前面分析了函数的调用位置，那么这个调用位置如何决定this的绑定对象呢？</p> <p>在this的绑定规则中一共有四种，分别是：</p> <ul><li>默认绑定</li> <li>隐式绑定</li> <li>显式绑定</li> <li>new 绑定</li></ul> <p>一个个分析;</p> <h4 id="_1、默认绑定"><a href="#_1、默认绑定" class="header-anchor">#</a> 1、默认绑定</h4> <blockquote><p>就是函数调用类型，也称独立函数调用（无法应用其他规则时的默认规则）</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20201206163842630.png" alt="在这里插入图片描述"></p> <p>函数调用时使用了默认绑定规则，this指向全局作用域，因此输出<code>2</code>;</p> <p><strong>注意：在严格模式下，this会绑定到<code>undefined</code>，而非使用默认绑定</strong> <img src="https://img-blog.csdnimg.cn/20201206164252842.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <h4 id="_2、隐式绑定"><a href="#_2、隐式绑定" class="header-anchor">#</a> 2、隐式绑定</h4> <ul><li>介绍</li></ul> <blockquote><p>考虑调用位置是否含有上下文对象，或者是否被某个对象拥有或包含</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> obj <span class="token operator">=</span>  <span class="token punctuation">{</span>
+  a<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span>
+  foo<span class="token operator">:</span>foo
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//2</span>
+</code></pre></div><p>当函数引用上下文对象时，<code>隐式绑定</code>会把函数的this绑定到这个上下文对象上（因为调用foo()时this被绑定到obj上了，因此this.a和obj.a是等价的）</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//等价</span>
+
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//因此输出的是2</span>
+</code></pre></div><ul><li>有关对象属性引用链</li></ul> <p>举个例子：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> obj2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span><span class="token number">40</span><span class="token punctuation">,</span>
+  foo<span class="token operator">:</span>foo
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> obj1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+  obj2<span class="token operator">:</span>obj2
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+obj1<span class="token punctuation">.</span>obj2<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//42</span>
+</code></pre></div><p><code>obj1-&gt;obj2-&gt;foo</code>
+起作用的是obj2：<code>a:40</code></p> <ul><li>隐式丢失</li></ul> <p>被隐式绑定的函数会被丢失绑定对象，也就是是它会应用默认的绑定规则：也就是<code>全局或者是undefined</code></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  a<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span>
+  foo<span class="token operator">:</span>foo
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> bar <span class="token operator">=</span> obj<span class="token punctuation">.</span>foo<span class="token punctuation">;</span><span class="token comment">//引用的foo函数本身-&gt;指向全局</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">&quot;jingjing&quot;</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//2，指向obj</span>
+<span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//jingjing</span>
+</code></pre></div><ul><li>参数传递-隐式赋值</li></ul> <p><img src="https://img-blog.csdnimg.cn/20201206173223886.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <h4 id="_3、显式绑定"><a href="#_3、显式绑定" class="header-anchor">#</a> 3、显式绑定</h4> <h4 id="_4、new-绑定"><a href="#_4、new-绑定" class="header-anchor">#</a> 4、new 绑定</h4> <h3 id="this指向的改变机制"><a href="#this指向的改变机制" class="header-anchor">#</a> this指向的改变机制</h3> <h3 id="call-apply-bind-模拟实现"><a href="#call-apply-bind-模拟实现" class="header-anchor">#</a> call apply bind 模拟实现</h3> <h2 id="执行上下文与调用栈"><a href="#执行上下文与调用栈" class="header-anchor">#</a> 执行上下文与调用栈</h2></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/folder1/test5.html" class="prev">
+        javascript-数组&amp;字符串详谈
+      </a></span> <span class="next"><a href="/pages/folder1/test7.html">
+        javascript-手写
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.457c5e77.js" defer></script><script src="/assets/js/2.56829aa0.js" defer></script><script src="/assets/js/26.ee52164e.js" defer></script>
+  </body>
+</html>

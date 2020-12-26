@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>【web网络篇】—跨域 | 婧婧的首页</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/egg.png">
+    <meta name="description" content="婧婧的前端记录">
+    
+    <link rel="preload" href="/assets/css/0.styles.d32c054f.css" as="style"><link rel="preload" href="/assets/js/app.457c5e77.js" as="script"><link rel="preload" href="/assets/js/2.56829aa0.js" as="script"><link rel="preload" href="/assets/js/16.bfb2e342.js" as="script"><link rel="prefetch" href="/assets/js/10.9960f884.js"><link rel="prefetch" href="/assets/js/11.72b2ff05.js"><link rel="prefetch" href="/assets/js/12.3ca7598c.js"><link rel="prefetch" href="/assets/js/13.9d61903d.js"><link rel="prefetch" href="/assets/js/14.b85b0389.js"><link rel="prefetch" href="/assets/js/15.490b8533.js"><link rel="prefetch" href="/assets/js/17.cd69f42a.js"><link rel="prefetch" href="/assets/js/18.ad6455eb.js"><link rel="prefetch" href="/assets/js/19.ce21f751.js"><link rel="prefetch" href="/assets/js/20.f292b97e.js"><link rel="prefetch" href="/assets/js/21.28010e96.js"><link rel="prefetch" href="/assets/js/22.97cf0af3.js"><link rel="prefetch" href="/assets/js/23.68052dee.js"><link rel="prefetch" href="/assets/js/24.b70a2770.js"><link rel="prefetch" href="/assets/js/25.3aaabdb6.js"><link rel="prefetch" href="/assets/js/26.ee52164e.js"><link rel="prefetch" href="/assets/js/27.6cd5534a.js"><link rel="prefetch" href="/assets/js/28.4a678ee5.js"><link rel="prefetch" href="/assets/js/29.5487dbca.js"><link rel="prefetch" href="/assets/js/3.16edbd61.js"><link rel="prefetch" href="/assets/js/4.229a3a61.js"><link rel="prefetch" href="/assets/js/5.a27ddcbd.js"><link rel="prefetch" href="/assets/js/6.12c1d182.js"><link rel="prefetch" href="/assets/js/7.06af1b1d.js"><link rel="prefetch" href="/assets/js/8.472ac202.js"><link rel="prefetch" href="/assets/js/9.dd4c9217.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d32c054f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/egg.png" alt="婧婧的首页" class="logo"> <span class="site-name can-hide">婧婧的首页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder1/test2.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+  琐碎
+</a></li></ul></div></div><div class="nav-item"><a href="/pages/folder1/test3.html" class="nav-link">
+  功能演示
+</a></div><div class="nav-item"><a href="https://github.com/dwanda" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/folder1/test2.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+  琐碎
+</a></li></ul></div></div><div class="nav-item"><a href="/pages/folder1/test3.html" class="nav-link">
+  功能演示
+</a></div><div class="nav-item"><a href="https://github.com/dwanda" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>WEB网络</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/folder1/test14.html" class="sidebar-link">HTTP/HTTPS</a></li><li><a href="/pages/folder1/test15.html" class="sidebar-link">web协议</a></li><li><a href="/pages/folder1/test16.html" aria-current="page" class="active sidebar-link">跨域</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/folder1/test16.html#写在前面" class="sidebar-link">写在前面：</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test16.html#同源策略" class="sidebar-link">同源策略</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test16.html#跨域" class="sidebar-link">跨域</a></li><li class="sidebar-sub-header"><a href="/pages/folder1/test16.html#解决跨域问题" class="sidebar-link">解决跨域问题</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>REACT</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>小程序</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="【web网络篇】-跨域"><a href="#【web网络篇】-跨域" class="header-anchor">#</a> 【web网络篇】—跨域</h1> <p><img src="https://img-blog.csdnimg.cn/20201107164027731.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p> <h2 id="写在前面"><a href="#写在前面" class="header-anchor">#</a> 写在前面：</h2> <p>如何真正理解一个知识，我想只有从what why how这三个方面真正理解，才能进脑子。
+因此我打算从三个方面，分别是：跨域是什么，为什么要跨域，跨域问题怎么解决来看有关跨域的知识点。</p> <p>哪个不会写哪个，加油咯</p> <p>先来看看全文总览：
+<img src="https://img-blog.csdnimg.cn/20201107165455616.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1Njc4NjA3,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p> <p>在理解跨域之前，首先要理解的是同源策略</p> <h2 id="同源策略"><a href="#同源策略" class="header-anchor">#</a> 同源策略</h2> <p><strong>同源：</strong></p> <blockquote><p>如果两个 URL 的 protocol、port (如果有指定的话)和 host 都相同的话，则这两个 URL 是<code>同源</code>。</p></blockquote> <p><strong>同源策略：</strong></p> <blockquote><p>同源策略控制不同源之间的<code>交互</code>，例如在使用XMLHttpRequest 或 <img> 标签时则会受到同源策略的约束。</p></blockquote> <h2 id="跨域"><a href="#跨域" class="header-anchor">#</a> 跨域</h2> <p>再来说说跨域，总体上分为三个方面---网络，DOM，web数据;</p> <ul><li>跨源网络访问</li> <li>跨源脚本API访问</li> <li>跨源数据存储访问</li></ul> <h3 id="一、跨源网络访问"><a href="#一、跨源网络访问" class="header-anchor">#</a> 一、跨源网络访问</h3> <blockquote><p>同源策略限制了通过XMLHttpRequest等方式将站点的数据发送给不同源的站点</p></blockquote> <p>同源策略是使用在两个不同源之间，用来限制它们之间<code>交互</code>的一种安全策略。
+其中交互分为以下三种：</p> <p>1、跨域写操作：</p> <p>一般是被允许的，例如<code>链接（links）</code>，<code>重定向</code>以及<code>表单提交</code>。</p> <p>2、跨域资源嵌入：</p> <p>一般是被允许，有以下一些情况可以支持资源嵌入：</p> <ul><li><p><code>&lt;script src=&quot;...&quot;&gt;&lt;/script&gt;</code>标签嵌入跨域脚本。语法错误信息只能被同源脚本中捕捉到。</p></li> <li><p><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;...&quot;&gt;</code>标签嵌入CSS。由于CSS的松散的语法规则，CSS的跨域需要一个设置正确的 HTTP 头部 <code>Content-Type</code>。不同浏览器有不同的限制：<code>IE, Firefox, Chrome, Safari (跳至CVE-2010-0051)部分 和 Opera</code>。</p></li> <li><p>通过<code>&lt;img&gt;</code> 展示的图片。支持的图片格式包括PNG,JPEG,GIF,BMP,SVG,...</p></li></ul> <p>3、跨域读操作：</p> <p>一般是不被允许的，但常可以通过内嵌资源来巧妙的进行读取访问。例如，你可以读取嵌入图片的高度和宽度，调用内嵌脚本的方法</p> <ul><li>如何允许跨源访问：</li></ul> <p>可以使用 CORS 来允许跨源访问。(下文具体讲)</p> <p>CORS 是 HTTP 的一部分，它允许服务端来指定哪些主机可以从这个服务端加载资源。</p> <ul><li>如何阻止跨源访问</li></ul> <p>阻止跨域写操作，只要检测请求中的一个不可推测的标记(CSRF token)即可，这个标记被称为 Cross-Site Request Forgery (CSRF) 标记。你必须使用这个标记来阻止页面的跨站读操作。</p> <p>阻止资源的跨站读取，需要保证该资源是不可嵌入的。阻止嵌入行为是必须的，因为嵌入资源通常向其暴露信息。</p> <p>阻止跨站嵌入，需要确保你的资源不能通过以上列出的可嵌入资源格式使用。浏览器可能不会遵守 Content-Type 头部定义的类型。例如，如果您在HTML文档中指定<code>&lt;script&gt;</code> 标记，则浏览器将尝试将标签内部的 HTML 解析为JavaScript。 当您的资源不是您网站的入口点时，您还可以使用CSRF令牌来防止嵌入。</p> <h3 id="二、跨源脚本api访问"><a href="#二、跨源脚本api访问" class="header-anchor">#</a> 二、跨源脚本API访问</h3> <blockquote><p>同源策略限制了来自不同源的Javascript脚本对当前DOM对象的读和写操作：</p></blockquote> <p>JavaScript 的 API 中，如 iframe.contentWindow、 window.parent、window.open 和 window.opener 允许文档间直接相互引用。当两个文档的源不同时，这些引用方式将对 Window 和 Location对象的访问添加限制</p> <p>为了能让不同源中文档进行交流，可以使用 window.postMessage。(下文具体讲)</p> <h3 id="三、跨源数据存储访问"><a href="#三、跨源数据存储访问" class="header-anchor">#</a> 三、跨源数据存储访问</h3> <blockquote><p>同源策略限制了来自不同源的站点读取当前站点的<code>localStorage</code>和 <code>IndexedDB</code>，<code>Cookies</code>：</p></blockquote> <p>访问存储在浏览器中的数据，如 <code>localStorage</code>和 <code>IndexedDB</code>，是以源进行分割。每个源都拥有自己单独的存储空间，<code>一个源中的 JavaScript 脚本不能对属于其它源的数据进行读写操作</code>。而<code>Cookies</code> 使用不同的源定义方式。</p> <p><em>最后来理一理有关如何解决跨域问题</em></p> <h2 id="解决跨域问题"><a href="#解决跨域问题" class="header-anchor">#</a> 解决跨域问题</h2> <h3 id="_1、jsonp"><a href="#_1、jsonp" class="header-anchor">#</a> 1、JSONP</h3> <blockquote><p>JSONP是一种应用Json的一种方法，是在被包含在函数调用中的JSON</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>callback({
+  &quot;name&quot;:&quot;jingjing&quot;
+});
+</code></pre></div><p>JSONP由两部分组成：回调函数和数据
+一个简单的JSONP请求：</p> <div class="language- extra-class"><pre class="language-text"><code>http://freegeoip.net/json/?callback=handleResponse
+</code></pre></div><p>这个URL在请求一个JSONP地理定位服务。通过查询字符串来指定JSONP服务的回调函数是很常见的，这里的回调函数指的是<code>handleResponse</code></p> <p>回到JSONP是如何实现跨域的呢？
+JSNP是通过动态<code>&lt;script&gt;</code>元素来使用的，使用时可以为src属性指定一个跨域URL，<code>&lt;script&gt;</code>有能力不受限制地从其他域里加载资源。</p> <h3 id="_2、cors"><a href="#_2、cors" class="header-anchor">#</a> 2、CORS</h3> <blockquote><p>跨源资源共享 (CORS) （或通俗地译为跨域资源共享）是一种机制，该机制使用附加的 HTTP 头来告诉浏览器，准许运行在一个源上的Web应用访问位于另一不同源选定的资源。</p></blockquote> <p>跨源HTTP请求的一个例子：</p> <p>运行在 http://domain-a.com 的JavaScript代码使用XMLHttpRequest来发起一个到 https://domain-b.com/data.json 的请求。</p> <p>CORS分为两种类型：</p> <ul><li>简单请求</li> <li>附带身份凭证的请求</li></ul> <h4 id="简单请求"><a href="#简单请求" class="header-anchor">#</a> 简单请求</h4> <p>某些请求不会触发 CORS 预检请求，至于CORS预检请求是什么，下面会提到。
+以下请求方法满足“简单请求”:</p> <ul><li>使用下列方法之一：
+<code>GET</code>,<code>HEAD</code>,<code>POST</code></li> <li>Content-Type 的值仅限于下列三者之一：
+<code>text/plain</code></li></ul> <p><code>multipart/form-data</code></p> <p><code>application/x-www-form-urlencoded</code></p> <ul><li><p>请求中的任意XMLHttpRequestUpload 对象均没有注册任何事件监听器；XMLHttpRequestUpload 对象可以使用 XMLHttpRequest.upload 属性访问。</p></li> <li><p>请求中没有使用 ReadableStream 对象。</p></li></ul> <p><strong>有关预检请求:</strong>
+“需预检的请求”要求必须首先使用 OPTIONS   方法发起一个预检请求到服务器，以获知服务器是否允许该实际请求。</p> <div class="language- extra-class"><pre class="language-text"><code> if(invocation)
+    {
+      invocation.open('POST', url, true);
+      invocation.setRequestHeader('X-PINGOTHER', 'pingpong');
+      invocation.setRequestHeader('Content-Type', 'application/xml');
+     ....
+    }
+
+</code></pre></div><p>使用 POST 请求发送一个 XML 文档，该请求包含了一个自定义的请求首部字段（X-PINGOTHER: pingpong）。另外，该请求的 Content-Type 为 application/xml。因此，该请求需要首先发起“预检请求”。</p> <div class="language- extra-class"><pre class="language-text"><code>域请求报文：
+OPTIONS /resources/post-here/ HTTP/1.1
+Host: bar.other
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1b3pre) Gecko/20081130 Minefield/3.1b3pre
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Connection: keep-alive
+Origin: http://foo.example
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: X-PINGOTHER, Content-Type
+</code></pre></div><p>浏览器检测到，从 JavaScript 中发起的请求需要被预检。从上面的报文中，我们看到，发送了一个使用 OPTIONS 方法的“预检请求”。 OPTIONS 是 HTTP/1.1 协议中定义的方法，用以从服务器获取更多信息。该方法不会对服务器资源产生影响。</p> <p>预检请求中同时携带了下面两个首部字段：
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: X-PINGOTHER, Content-Type
+首部字段 Access-Control-Request-Method 告知服务器，实际请求将使用 POST 方法。首部字段 Access-Control-Request-Headers 告知服务器，实际请求将携带两个自定义请求首部字段：X-PINGOTHER 与 Content-Type。服务器据此决定，该实际请求是否被允许。</p> <div class="language- extra-class"><pre class="language-text"><code>预检请求的响应报文：
+HTTP/1.1 200 OK
+Date: Mon, 01 Dec 2008 01:15:39 GMT
+Server: Apache/2.0.61 (Unix)
+Access-Control-Allow-Origin: http://foo.example
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+Access-Control-Allow-Headers: X-PINGOTHER, Content-Type
+Access-Control-Max-Age: 86400
+Vary: Accept-Encoding, Origin
+Content-Encoding: gzip
+Content-Length: 0
+Keep-Alive: timeout=2, max=100
+Connection: Keep-Alive
+Content-Type: text/plain
+</code></pre></div><p>预检请求的响应，表明服务器将接受后续的实际请求,其中需要关注的是：</p> <div class="language- extra-class"><pre class="language-text"><code>Access-Control-Allow-Origin: http://foo.example
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+Access-Control-Allow-Headers: X-PINGOTHER, Content-Type
+Access-Control-Max-Age: 86400
+</code></pre></div><p>首部字段 Access-Control-Allow-Methods 表明服务器允许客户端使用 POST, GET 和 OPTIONS 方法发起请求</p> <p>首部字段 Access-Control-Allow-Headers 表明服务器允许请求中携带字段 X-PINGOTHER 与 Content-Type
+Access-Control-Allow-Methods 一样，Access-Control-Allow-Headers 的值为逗号分割的列表</p> <p>最后，首部字段 Access-Control-Max-Age 表明该响应的有效时间为 86400 秒，也就是 24 小时。在有效时间内，浏览器无须为同一请求再次发起预检请求。</p> <p><strong>请注意，浏览器自身维护了一个最大有效时间，如果该首部字段的值超过了最大有效时间，将不会生效。</strong></p> <h4 id="附带身份凭证的请求"><a href="#附带身份凭证的请求" class="header-anchor">#</a> 附带身份凭证的请求</h4> <blockquote><p>对于跨源 XMLHttpRequest 或 Fetch 请求，浏览器不会发送身份凭证信息。如果要发送凭证信息，需要设置 XMLHttpRequest 的某个特殊标志位。</p></blockquote> <p>通过设置 withCredentials： true ，可以指定某个请求应该发生凭据，如果服务器接收凭据的请求，会用下面的HPPT头部来响应</p> <div class="language- extra-class"><pre class="language-text"><code>Access-Control-Allow-Credentials: true 
+</code></pre></div><p>如果服务器端的响应中未携带这个头部，浏览器将不会把响应内容返回给请求的发送者。</p> <h3 id="_3、postmessage"><a href="#_3、postmessage" class="header-anchor">#</a> 3、postMessage()</h3> <blockquote><p>从广义上讲，一个窗口可以获得对另一个窗口的引用（比如 targetWindow = window.opener），然后在窗口上调用 targetWindow.postMessage() 方法分发一个  MessageEvent 消息。接收消息的窗口可以根据需要自由处理此事件。传递给 window.postMessage() 的参数（比如 message ）将通过消息事件对象暴露给接收消息的窗口。</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code>otherWindow<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> targetOrigin<span class="token punctuation">,</span> <span class="token punctuation">[</span>transfer<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>otherWindow</code>
+其他窗口的一个引用，比如iframe的contentWindow属性、执行window.open返回的窗口对象、或者是命名过或数值索引的window.frames。
+<code>message</code>
+将要发送到其他 window的数据。
+<code>targetOrigin</code>
+通过窗口的origin属性来指定哪些窗口能接收到消息事件，其值可以是字符串&quot;*&quot;（表示无限制）或者一个URI。</p> <p>postMessage()方法接收两个参数：一条消息和一个表示消息接收方来自哪个域的字符串。第二个参数对保障安全通信非常重要，可以防止浏览器把消息发送到不安全的地方。来看下面的例子。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> iframeWindow <span class="token operator">=</span> doucument<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;jing&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>contentWindow<span class="token punctuation">;</span>
+iframeWindow<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token string">&quot;da&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;http://www.jing.com&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>其他跨域技术</p> <p><a href="https://juejin.im/post/6844903521163182088" target="_blank" rel="noopener noreferrer">正确面对跨域，别慌<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>参考文献：</p> <p>[1] MDN文档</p> <p>[2] 浏览器实践与原理</p> <p>[3] Javascript高级程序设计</p> <p>欢迎参观我的博客：<a href="jingjingjinjin.xyz">婧婧的博客</a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/folder1/test15.html" class="prev">
+        web协议
+      </a></span> <span class="next"><a href="/pages/folder1/test21.html">
+        react基础
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.457c5e77.js" defer></script><script src="/assets/js/2.56829aa0.js" defer></script><script src="/assets/js/16.bfb2e342.js" defer></script>
+  </body>
+</html>
